@@ -1,5 +1,5 @@
 # Анализ данных сервиса Яндекс Афиша
-[ipynb](https://github.com/ghdena/Portfolio-Afisha/blob/main/Service_Afisha.ipynb)
+[ipynb](https://github.com/ghdena/Portfolio/blob/main/Afisha/Service_Afisha.ipynb)
 
 ### Цель
 Провести исследовательский анализ данных в Python, чтобы выявить инсайты об изменении пользовательских предпочтений 
