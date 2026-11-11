@@ -6,8 +6,8 @@ from psycopg2.extras import execute_values
 
 default_args = {
     'owner': 'owner_name',
-    'retries': 1,
-    'retry_delay': timedelta(minutes=5),
+    'retries': 2,
+    'retry_delay': timedelta(minutes=10),
 }
 
 @dag(
@@ -65,6 +65,7 @@ def cbr_currency_dag():
                     })
                     df['rate'] = df['rate'].str.replace(',', '.').astype(float)
                     df['units'] = df['units'].astype(int)
+                    df['digital_code'] = df['digital_code'].astype(str).str.zfill(3)
                     df['rate_date'] = current_date
                     
                     all_data.extend(
