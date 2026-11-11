@@ -1,5 +1,5 @@
 # ETL-пайплайн для загрузки курсов валют ЦБ РФ
-[DAG](https://github.com/ghdena/Portfolio/blob/main/CBR_currency/Currency_from_CBR.py)
+[DAG](https://github.com/ghdena/Portfolio/blob/main/CBR_rates/Currency_from_CBR.py)
 
 ### Цель
 Разработать автоматизированный пайплайн для ежедневной загрузки, трансформации и сохранения актуальных курсов валют с официального сайта [ЦБ РФ](https://cbr.ru) 
